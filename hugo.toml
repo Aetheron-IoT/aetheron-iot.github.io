@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://aetheron-iot.github.io/'
 locale = 'en-us'
 title = 'Aetheron'
 theme = 'aetheron'
