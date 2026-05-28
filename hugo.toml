@@ -1,0 +1,27 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Aetheron'
+theme = 'aetheron'
+
+[security]
+  allowContent = ['^text/html$', '^text/markdown$']
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[menus]
+  [[menus.main]]
+    name = 'Inicio'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Paginas Web'
+    pageRef = '/paginas-web'
+    weight = 20
+
+  [[menus.main]]
+    name = 'PCBs'
+    pageRef = '/pcbs'
+    weight = 30

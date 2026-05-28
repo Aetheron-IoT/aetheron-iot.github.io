@@ -1,0 +1,14 @@
+$prefix: "bs-";
+$navbar-padding-x: 1rem;
+$navbar-padding-y: 0.5rem;
+
+.navbar {
+    --#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 0, $navbar-padding-x)} !important;
+    --#{$prefix}navbar-padding-y: #{$navbar-padding-y} !important;
+}
+
+.hero-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('/images/descripcion-bg.jpg') no-repeat center center;
+    background-size: cover;
+}

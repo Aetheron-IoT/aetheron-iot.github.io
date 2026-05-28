@@ -1,0 +1,32 @@
+---
+title: "Páginas Web"
+descripcion_general: "Portafolio de soluciones web y desarrollo independiente. El catálogo abarca el diseño de herramientas de automatización, optimización de procesos y entornos web experimentales."
+outputs: ["HTML"]
+thumbnail: "thumbnail.jpg"
+
+proyectos:
+  - nombre: "D'Pana Restaurante"
+    descripcion: "Restaurant / hamburguesería."
+    enlace: "https://aetheron-iot.github.io/paginas-ia/pages/pagina_1772851402.html"
+    miniatura: "demo-1.png"
+  - nombre: "Domino Restaurant-Cafe"
+    descripcion: "Restaurant / Café"
+    enlace: "https://aetheron-iot.github.io/paginas-ia/pages/pagina_1772906956.html"
+    miniatura: "demo-2.png"
+  - nombre: "Restaurant Facu's"
+    descripcion: "Restaurante de comida peruana"
+    enlace: "https://aetheron-iot.github.io/paginas-ia/pages/pagina_1772907338.html"
+    miniatura: "demo-3.png"
+  - nombre: "Dao's Arequipa"
+    descripcion: "Restaurante de comida tradicional arequipeña"
+    enlace: "https://aetheron-iot.github.io/paginas-ia/pages/pagina_1772907833.html"
+    miniatura: "demo-4.png"
+  - nombre: "Romano - Pastas & Ahumados"
+    descripcion: "Restaurante de comida italiana"
+    enlace: "https://aetheron-iot.github.io/paginas-ia/pages/pagina_1779927284.html"
+    miniatura: "demo-5.png"
+  - nombre: "El Carnívoro"
+    descripcion: "Cortes de carne"
+    enlace: "https://aetheron-iot.github.io/paginas-ia/pages/pagina_1774327792.html"
+    miniatura: "demo-6.png"
+---
