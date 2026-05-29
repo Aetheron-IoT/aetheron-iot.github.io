@@ -1,7 +1,14 @@
-{{ $bgImage := .Params.hero_image }}
+{{ $image := resources.Get "images/pcbs/bg-hero.jpg" }}
 
-<div class="position-relative overflow-hidden py-3 p-md-1 mb-3 mb-md-5 text-center hero-bg"
-     style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{ $bgImage }}');">
+{{ $bgUrl := "" }}
+
+{{ if $image }}
+  {{ $optimized := $image.Resize "1920x webp q10" }}
+  {{ $bgUrl = $optimized.RelPermalink }}
+{{ end }}
+
+<div class="position-relative overflow-hidden py-3 p-md-1 mb-5 mb-md-5 text-center hero-bg"
+     style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)){{ if $bgUrl }}, url('{{ $bgUrl }}'){{ end }}; background-color: #1a1a1a;">
   
   <div class="col-md-6 p-lg-5 mx-auto my-5 position-relative z-1">
     <h1 class="display-3 fw-bold text-white">{{ .Title }}</h1>

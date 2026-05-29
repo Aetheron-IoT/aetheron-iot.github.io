@@ -1,20 +1,30 @@
-{{ $bgImage := .Params.hero_image }}
+{{ $image := resources.Get "images/home/bg-hero.jpg" }}
 
+{{ $bgUrl := "" }}
+
+{{ if $image }}
+  {{ $optimized := $image.Resize "1920x webp q30" }}
+  {{ $bgUrl = $optimized.RelPermalink }}
+{{ end }}
+
+{{/* 3. Tu contenedor de Bootstrap adaptado */}}
 <div class="position-relative overflow-hidden py-3 p-md-1 mb-5 mb-md-5 text-center hero-bg"
-     style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{ $bgImage }}');">
+     style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)){{ if $bgUrl }}, url('{{ $bgUrl }}'){{ end }}; background-color: #1a1a1a;">
   
   <div class="col-md-6 p-lg-5 mx-auto my-5 position-relative z-1">
     <h1 class="display-3 fw-bold text-white">{{ .Title }}</h1>
     <h3 class="fw-normal text-white-50 mb-3">
       {{ .Params.descripcion_general }}
     </h3>
+    
     <div class="d-flex gap-3 justify-content-center lead fw-normal">
       <a class="btn btn-outline-light" href="#servicios"> Servicios </a> 
       <a class="btn btn-outline-light" href="#precios"> Precios </a> 
       <a class="btn btn-outline-light" href="#contactanos"> Contáctanos </a> 
     </div>
+    
     <div class="mt-3">
-      <a class="btn btn-outline-light" href="https://wa.me/51942355392">
+      <a class="btn btn-outline-light" href="https://wa.me/51942355392" target="_blank" rel="noopener">
         <i class="fa-brands fa-whatsapp"></i>
         Whatsapp
       </a>
