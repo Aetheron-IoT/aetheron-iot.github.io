@@ -3,6 +3,7 @@ title: "Páginas Web"
 descripcion_general: "Portafolio de soluciones web y desarrollo independiente. El catálogo abarca el diseño de herramientas de automatización, optimización de procesos y entornos web experimentales."
 outputs: ["HTML"]
 thumbnail: "thumbnail.jpg"
+hero_image: "bg-hero.jpg"
 
 proyectos:
   - nombre: "D'Pana Restaurante"

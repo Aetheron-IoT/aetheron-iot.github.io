@@ -8,16 +8,7 @@
     {{ partial "header.html" . }}
   </header>
     <main>
-      {{ if .IsHome }}
-        {{ partial "home/descripcion.html" . }}
-        <div class="container py-3">
-          {{ block "main" . }}{{ end }}
-        </div>
-      {{ else }}
-        <div class="container py-3">
-          {{ block "main" . }}{{ end }}
-        </div>
-      {{ end }}
+      {{ block "main" . }}{{ end }}
     </main>
     <footer class="container border-top pt-3 mt-5">
       {{ partial "footer.html" . }}
