@@ -10,7 +10,7 @@
     "binding": "ASSETS"
   },
   "build": {
-    "command": "HUGO_VERSION=0.162.0 hugo --gc --minify",
+    "command": "hugo --gc --minify",
     "watch_dir": "content"
   }
 }
