@@ -10,7 +10,7 @@
     "binding": "ASSETS"
   },
   "build": {
-    "command": "hugo --gc --minify",
+    "command": "npx hugo-extended@0.162.0 --gc --minify",
     "watch_dir": "content"
   }
 }
