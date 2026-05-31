@@ -6,8 +6,7 @@
     "enabled": true
   },
   "assets": {
-    "directory": "public",
-    "binding": "ASSETS"
+    "directory": "public"
   },
   "build": {
     "command": "npx hugo-extended@0.162.0 --gc --minify",
