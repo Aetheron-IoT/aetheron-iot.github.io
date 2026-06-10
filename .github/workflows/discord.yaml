@@ -9,6 +9,6 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
           -d '{
-            "content": "**Nuevo Push en ${{ github.repository }}**\n**Autor:** ${{ github.actor }}\n**Commit:** ${{ github.event.head_commit.message }}\n**Link:** ${{ github.event.head_commit.url }}"
+            "content": "# Nuevo Push en ${{ github.repository }}\n**Autor:** ${{ github.actor }}\n**Commit:** ${{ github.event.head_commit.message }}\n**Link:** ${{ github.event.head_commit.url }}"
           }' \
           ${{ secrets.DISCORD_WEBHOOK_URL }}
